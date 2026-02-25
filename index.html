@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fish Eat Fish</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <h1>Fish Eat Fish</h1>
+        <div class="stats">
+          <span id="sizeLabel">Size: 1.00x</span>
+          <span id="eatenLabel">Fish eaten: 0</span>
+          <span id="goalLabel">Goal: Fill the ocean</span>
+        </div>
+      </header>
+      <canvas id="game" width="960" height="540" aria-label="Fish game canvas"></canvas>
+      <p class="hint">Use arrow keys (or WASD) to move. Eat smaller fish, avoid larger fish.</p>
+    </main>
+
+    <div id="overlay" class="overlay hidden" role="status" aria-live="polite">
+      <div class="panel">
+        <h2 id="overlayTitle">Fish Eat Fish</h2>
+        <p id="overlayText"></p>
+        <button id="restartBtn" type="button">Play Again</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
